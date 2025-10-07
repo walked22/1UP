@@ -1,0 +1,1 @@
+ffmpeg -f x11grab -s 800x480 -i :0.0+0,0 -vf "scale=1280:720,format=yuv420p" -c:v h264_v4l2m2m -b:v 2000k -r 30 -f flv rtmp://live.twitch.tv/app/#####twitch_code#######
