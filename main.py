@@ -44,14 +44,26 @@ class MainWindow(QtWidgets.QMainWindow):
 		self.thread = VideoThread()
 		self.thread.frame_received.connect(self.update_image)
 		self.thread.start()
+		
+		self.circle_pos = QtCore.QPoint(200, 200)  # x, y
+		self.circle_radius = 50
+		self.circle_color = QtGui.QColor(255, 0, 0)  # red
+		self.x = 0
 
 	def loop(self):
 		print("hello")
-			                        
+		self.x+=1
 
 	def update_image(self, qt_pix):
 		#pix = qt_pix.scaled(1280, 720, QtCore.Qt.KeepAspectRatio, QtCore.Qt.SmoothTransformation)
+		painter = QtGui.QPainter(qt_pix)
+		painter.setRenderHint(QtGui.QPainter.Antialiasing)
+		painter.setPen(QtCore.Qt.black)
+		painter.setBrush(self.circle_color)
+		painter.drawEllipse(self.circle_pos, self.x, self.circle_radius)
+		painter.end()
 		self.cam0.setPixmap(qt_pix)
+		
 
 if __name__ == "__main__":
 	app = QtWidgets.QApplication(sys.argv)
