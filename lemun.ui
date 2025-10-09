@@ -126,21 +126,89 @@ border-radius: 8px;</string>
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="label">
+   <widget class="QLabel" name="speedLabel">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>660</y>
+      <x>0</x>
+      <y>669</y>
       <width>211</width>
       <height>51</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 700 italic 32pt &quot;System-ui&quot;;
-background-color: rgb(0, 0, 0);</string>
+     <string notr="true">font: 700 32pt &quot;System-ui&quot;;
+background-color: rgba(0, 0, 0, 150);</string>
     </property>
     <property name="text">
      <string>### MPH</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="latLabel">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>211</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 700 16pt &quot;System-ui&quot;;
+background-color: rgba(0, 0, 0, 150);</string>
+    </property>
+    <property name="text">
+     <string>LAT:      ###.######</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="satLabel">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>60</y>
+      <width>151</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 700 16pt &quot;System-ui&quot;;
+background-color: rgba(0, 0, 0, 150);</string>
+    </property>
+    <property name="text">
+     <string>SAT: ##</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="altLabel">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>90</y>
+      <width>151</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 700 16pt &quot;System-ui&quot;;
+background-color: rgba(0, 0, 0, 150);</string>
+    </property>
+    <property name="text">
+     <string>ALT:: ###.#</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="longLabel">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>30</y>
+      <width>211</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 700 16pt &quot;System-ui&quot;;
+background-color: rgba(0, 0, 0, 150);</string>
+    </property>
+    <property name="text">
+     <string>LONG: ###.######</string>
     </property>
    </widget>
   </widget>
