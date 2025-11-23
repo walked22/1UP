@@ -58,7 +58,7 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="label_3">
+   <widget class="QLabel" name="frontDriver">
     <property name="geometry">
      <rect>
       <x>1110</x>
@@ -75,7 +75,7 @@ border-radius: 8px;</string>
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="label_4">
+   <widget class="QLabel" name="frontPass">
     <property name="geometry">
      <rect>
       <x>1245</x>
@@ -92,7 +92,7 @@ border-radius: 8px;</string>
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="label_5">
+   <widget class="QLabel" name="rearPass">
     <property name="geometry">
      <rect>
       <x>1245</x>
@@ -109,7 +109,7 @@ border-radius: 8px;</string>
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="label_6">
+   <widget class="QLabel" name="rearDriver">
     <property name="geometry">
      <rect>
       <x>1110</x>
@@ -209,6 +209,58 @@ background-color: rgba(0, 0, 0, 150);</string>
     </property>
     <property name="text">
      <string>LONG: ###.######</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="frontDTemp">
+    <property name="geometry">
+     <rect>
+      <x>1127</x>
+      <y>479</y>
+      <width>51</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>100F</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="frontPTemp">
+    <property name="geometry">
+     <rect>
+      <x>1212</x>
+      <y>479</y>
+      <width>51</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>100F</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="rearPTemp">
+    <property name="geometry">
+     <rect>
+      <x>1212</x>
+      <y>660</y>
+      <width>51</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>100F</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="rearDTemp">
+    <property name="geometry">
+     <rect>
+      <x>1127</x>
+      <y>660</y>
+      <width>51</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>100F</string>
     </property>
    </widget>
   </widget>
